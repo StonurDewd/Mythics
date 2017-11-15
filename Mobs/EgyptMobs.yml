@@ -1,0 +1,94 @@
+Ra:
+  Type: Husk
+  Display: 'Ra, god of the Sun'
+  BossBar:
+    Enabled: true
+    Title: 'Ra'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> The sun fills me with power!!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, you will burn for your treason!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - command{c="time set day"} ~onTimer:75  
+  - skill{s=SummonZombies} @Target
+  Equipment:
+  - SealedFeet:1
+  - Uas:0
+  - BoneClothChestplate:3
+  - DeathCowl:4
+  Drops:
+  - RaDrops
+  - exp 10000
+  - AdminRock
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+Horus:
+  Type: Skeleton
+  Display: 'Horus, god of the Sky'
+  BossBar:
+    Enabled: true
+    Title: 'Horus'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+    Health: 700
+  Damage: 45
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> When I'm done with you, you'll know who the strongest god is!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, your blood marks the time of Horus!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target
+  - skill{s=HorusPush} @Target
+  Equipment:
+  - SealedFeet:1
+  - SkyBreaker:0
+  - DeathCowl:4
+  - StoneWindPants:2
+  - BoneClothChestplate:3
+  Drops:
+  - HorusDrops
+  - exp 1000
+  - AdminRock4
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true 
+Anubis: 
+  Type: WITHER_SKELETON
+  Display: '&f&lAnubis, God of Death'
+  BossBar:
+    Enabled: true
+    Title: 'Anubis'
+    Range: 20
+    Color: WHITE
+    Style: SOLID
+  Health: 650
+  Damage: 50
+  Skills:
+  - message{cooldown=20;m="<mob.name><&co> ...!"} @PlayersInRadius{r=40} ~onCombat >0 0.2
+  - message{m="<mob.name><&co><trigger.name>, Your soul has been weighed!"} @PlayersInRadius{r=40} ~onPlayerKill >0 1
+  - skill{s=SummonZombies} @Self 0.1
+  - skill{s=SummonZombies} @Target 0.2
+  - skill{s=AnubisMummify} @Target 0.2
+  Equipment:
+  - SealedFeet:1
+  - BoneClothChestplate:3
+  - Khopesh:0
+  - DeathCowl:4
+  Drops:
+  - AnubisDrops
+  - exp 10000
+  - AdminRock2
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true

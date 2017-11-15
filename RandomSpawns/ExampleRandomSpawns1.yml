@@ -1,0 +1,7 @@
+Example:
+  Mobname: giant
+  Worlds: test
+  Chance: 0
+  Priority: 1
+  Conditions:
+  - outside true

@@ -1,0 +1,68 @@
+#slime
+#magmacube
+SlimeKing:
+  Mobtype: slime
+  Display: '&a史萊姆首領&r'
+  Health: 5000
+  Damage: 10
+  Skills:
+  - skill EnchantedEarth ~onDamaged <100% 0.03
+  - Potion 6:CONFUSION:20:5 ~onDamaged <80% 0.1
+  - msg 20:'&a$boss &f散發出暈眩的氣息' ~onDamaged <80% 0.01
+  - Potion 6:SLOW:20:5 ~onDamaged <60% 0.1
+  - msg 20:'&a$boss &f讓周圍的空氣變黏' ~onDamaged <60% 0.01
+  - Potion 6:BLINDNESS:20:5 ~onDamaged <40% 0.2
+  - msg 20:'&a$boss &f開始吸收周圍的光線' ~onDamaged <40% 0.01
+  - PotionSelf SPEED:20:5 ~onDamaged <20% 0.3
+  - msg 20:'&a$boss &f血變少，身體變輕盈了' ~onDamaged <20% 0.01
+  - PotionSelf INVISIBILITY:10:5 ~onDamaged <10% 0.3
+  - msg 20:'&a$boss &f血變少，身體變更透明了' ~onDamaged <10% 0.01
+  - cmd 'summon Slime $boss_x $boss_y $boss_z {Size:4}' ~onDamaged <10% 0.05
+#  - summon slime:1 ~onDamaged <10% 0.6
+  - msg 20:'&a$boss &f似乎想要分身逃跑' ~onDamaged <10% 0.05
+#  - skill onSpawn_broadcast ~onSpawn 1
+  - skill onDeath_broadcast ~onDeath 1
+  Equipment:
+  - 313:1
+  - 312:2
+  - 311:3
+  - 310:4
+  Drops:
+  - SlimeKing
+  Options:
+    AlwaysShowName: true
+    PreventSlimeSplit: true
+    Size: 10
+SlimeKing_f:
+  Mobtype: magmacube
+  Display: '&5火史萊姆首領'
+  Health: 3800
+  Damage: 12
+  Skills:
+  - skill Flare ~onDamaged <100% 0.05
+  - potion 6:CONFUSION:20:5 ~onDamaged <80% 0.1
+  - msg 20:'&a$boss &f散發出暈眩的氣息' ~onDamaged <80% 0.01
+  - potion 6:SLOW:20:5 ~onDamaged <60% 0.1
+  - msg 20:'&a$boss &f讓周圍的空氣變黏' ~onDamaged <60% 0.01
+  - potion 6:BLINDNESS:20:5 ~onDamaged <40% 0.2
+  - msg 20:'&a$boss &f開始吸收周圍的光線' ~onDamaged <40% 0.01
+  - PotionSelf SPEED:20:5 ~onDamaged <20% 0.3
+  - msg 20:'&a$boss &f血變少，身體變輕盈了' ~onDamaged <20% 0.01
+  - PotionSelf INVISIBILITY:20:5 ~onDamaged <10% 0.3
+  - msg 20:'&a$boss &f血變少，身體變更透明了' ~onDamaged <10% 0.01
+  - cmd 'summon LavaSlime $boss_x $boss_y $boss_z {Size:4}' ~onDamaged <10% 0.1
+#  - summon magmacube:1 ~onDamaged <10% 0.6
+  - msg 20:'&a$boss &f似乎想要分身逃跑' ~onDamaged <10% 0.1
+  - skill onSpawn_broadcast ~onSpawn 1
+  - skill onDeath_broadcast ~onDeath 1
+  Equipment:
+  - 313:1
+  - 312:2
+  - 311:3
+  - 310:4
+  Drops:
+  - SlimeKing_f
+  Options:
+    AlwaysShowName: true
+    PreventSlimeSplit: true
+    Size: 12
