@@ -1,10 +1,10 @@
-Comet:
+﻿Comet:
   Cooldown: 0.25
   Skills:
-  - msg 15:'$boss &e招換了 彗星'
+  - msg 15:'$boss &eComet Completed'
   - potionself SLOW:125:10
   - delay 60
-  - msg 15:'&e彗星到來！'
+  - msg 15:'&eComet arrives！'
   - skill CometGroundEff
   - skill CometStartSound
   - delay 5

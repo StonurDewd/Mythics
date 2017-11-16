@@ -1,10 +1,10 @@
-Starfall:
+﻿Starfall:
   Cooldown: 0.25
   Skills:
-  - msg 15:'$boss &e準備開始施放 星落！'
+  - msg 15:'$boss &ePreparation commencement and release！'
   - potionself SLOW:145:10
   - delay 60
-  - msg 15:'$boss &e施放 星落！'
+  - msg 15:'$boss &eLiberation pitfall！'
   - skill StarfallEff1
   - skill StarfallSound1
   - skill StarfallSound2

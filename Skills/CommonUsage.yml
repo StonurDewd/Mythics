@@ -1,4 +1,4 @@
-#$mobuuid	Returns the UUID of the mob
+﻿#$mobuuid	Returns the UUID of the mob
 #$level	Returns the level of the mob
 #$boss	Returns the name of the mob
 #$mobhp	Returns current hp of the mob
@@ -14,9 +14,9 @@
 onDeath_broadcast:
   Cooldown: 0.25
   Skills:
-  - message 0:'&c[恭喜] &f$player &2成功擊殺了&r $boss &2獲得了獎勵！'
+  - message 0:'&c[Yasuki] &f$player &2Successful destruction done&r $boss &2Acquisition completion！'
 #  - message 5:'$mobuuid $level $boss $mobhp $mobmaxhp $money $percent $player $xp $colon $apos $dash'
 onSpawn_broadcast:
   Cooldown: 0.25
   Skills:
-  - message 0:'&7[提示]&r $boss &7出生了！'
+  - message 0:'&7[Presentation]&r $boss &7Birth completion!'

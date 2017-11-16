@@ -1,9 +1,9 @@
-Flare:
+﻿Flare:
   Cooldown: 0.25
   Skills:
   - potionself SLOW:85:10 >0 1
   - delay 50
-  - msg 15:'$boss &4熱力四射！' >0 1
+  - msg 15:'$boss &4Thermal force shooting！' >0 1
   - skill FlareEffectOne >0 1
   - skill FlareSoundOne >0 1
   - delay 2

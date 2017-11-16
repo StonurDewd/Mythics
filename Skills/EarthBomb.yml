@@ -1,9 +1,9 @@
-EarthBomb:
+﻿EarthBomb:
   Cooldown: 0.25
   Skills:
   - potionself SLOW:25:8
   - potion 10:SLOW:25:8
-  - msg 10:'$boss &e開始施放大地術！'
+  - msg 10:'$boss &eStarted Reaching Geotechnology！'
   - skill EarthBombEffectOne >0 1
   - skill EarthBombSoundOne >0 1
   - delay 4
